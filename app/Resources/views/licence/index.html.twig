@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h2 class="page-header">Derniers Informations</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Licences</th>
+
+
+    </thead>
+<tbody>
+    {% for licence in licences %}
+    <tr>
+        <th scope="row">{{ licence.id }}</th>
+        <td>{{ licence.name }}</td>
+        <td>{{ licence.permissions }}</td>
+        <td>CONDITIONS</td>
+        <td>LIMITATIONS</td>
+        <td><a href="/licences/details/{{licence.id}}" class="btn btn-default">View</a>
+        <a href="/licences/edit/{{licence.id}}" class="btn btn-default">Edit</a>
+        <a href="/licences/delete/{{licence.id}}" class="btn btn-default">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+{% endblock %}

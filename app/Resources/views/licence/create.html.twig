@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <a href="/" class="btn btn-default">retour</a>
+    <h2 class="page-header">Ajouter une Licence</h2>
+    {{form_start(form)}}
+    {{form_widget(form)}}
+    {{form_end(form)}}
+{% endblock %}

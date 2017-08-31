@@ -1,0 +1,19 @@
+# app_user_homepage:
+#     path:     /
+#     defaults: { _controller: AppUserBundle:Default:index }
+
+# login:
+#
+#     path: /login
+#     defaults:
+#         _controller: AppUserBundle:Security:login
+#
+#
+# login_check:
+#     path: /login_check
+#     defaults:
+#         _controller: AppUserBundle:Security:check
+#
+#
+# logout:
+#     path: /logout
